@@ -19,11 +19,14 @@ public:
         // 都按照顺序排列在[0...k)中
         // 同时, [k...i] 为 0
         for(int i = 0 ; i < nums.size() ; i ++)
-            if(nums[i])
-                if(k != i)
+            if(nums[i]){
+                if(k != i){
                     swap(nums[k++] , nums[i]);
-                else
+                }
+                else{
                     k ++;
+                }
+            }
     }
 };
 
